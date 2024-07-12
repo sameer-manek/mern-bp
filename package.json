@@ -1,0 +1,64 @@
+{
+  "name": "MERNboilerplate",
+  "version": "0.1.alpha",
+  "description": "Boiler plate for MERN stack applications",
+  "main": "index.js",
+  "watch": {
+    "build": {
+      "patterns": [
+        "src/view"
+      ],
+      "extensions": "js,jsx,css,png"
+    }
+  },
+  "scripts": {
+    "start": "concurrently \"npm run watch:css\"  \"webpack && nodemon src/index.js\" \"npm run watch \"",
+    "build": "webpack",
+    "watch": "npm-watch",
+    "watch:css": "postcss src/view/assets/css/app.css -o src/view/assets/main.css"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Sameer Manek",
+    "uname": "sameer-manek",
+    "email": "sameermanek@hotmail.com"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.24.8",
+    "@emotion/babel-plugin": "^11.11.0",
+    "axios": "^1.7.2",
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "country-data-list": "^1.3.0",
+    "express": "^4.19.2",
+    "joi": "^17.13.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.24.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.8",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@babel/plugin-transform-runtime": "^7.24.7",
+    "@babel/preset-env": "^7.24.8",
+    "@babel/preset-react": "^7.24.7",
+    "autoprefixer": "^10.4.19",
+    "babel-loader": "^9.1.3",
+    "babel-plugin-emotion": "^11.0.0",
+    "concurrently": "^8.2.2",
+    "css-loader": "^7.1.2",
+    "emotion": "^11.0.0",
+    "file-loader": "^6.2.0",
+    "nodemon": "^3.1.4",
+    "npm-watch": "^0.13.0",
+    "postcss-cli": "^11.0.0",
+    "prettier": "^3.3.2",
+    "react-refresh": "^0.14.2",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.93.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
+  },
+  "license": "ISC"
+}

@@ -1,0 +1,9 @@
+node_modules
+package-lock.json
+
+# include all files in bin except index.html
+!bin/
+
+bin/*
+!bin/index.html
+yarn.lock
