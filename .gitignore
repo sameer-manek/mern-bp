@@ -7,3 +7,5 @@ package-lock.json
 bin/*
 !bin/index.html
 yarn.lock
+
+tags

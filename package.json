@@ -1,12 +1,12 @@
 {
-  "name": "MERNboilerplate",
+  "name": "com.sameer-manek.mern-bp",
   "version": "0.1.alpha",
   "description": "Boiler plate for MERN stack applications",
   "main": "index.js",
   "watch": {
     "build": {
       "patterns": [
-        "src/view"
+        "src/fe"
       ],
       "extensions": "js,jsx,css,png"
     }
@@ -15,7 +15,7 @@
     "start": "concurrently \"npm run watch:css\"  \"webpack && nodemon src/index.js\" \"npm run watch \"",
     "build": "webpack",
     "watch": "npm-watch",
-    "watch:css": "postcss src/view/assets/css/app.css -o src/view/assets/main.css"
+    "watch:css": "postcss src/fe/assets/css/app.css -o src/fe/assets/main.css"
   },
   "keywords": [],
   "author": {
